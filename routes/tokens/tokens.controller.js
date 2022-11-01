@@ -1,7 +1,7 @@
 import express from 'express';
 
 import { readTokens, writeToken, updateToken, deleteToken } from './tokens.service.js';
-import { encrypt, decrypt, generateKey } from '../../utils.js';
+import { encrypt, generateKey } from '../../utils.js';
 
 const route = express.Router();
 const store = new Map();
